@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="img/foto-001.webp">
+<title>FUCOMABE — Fundación Comunitaria Manuela Beltrán</title>
+<meta name="description" content="FUCOMABE, Fundación Comunitaria Manuela Beltrán: educación con sentido de comunidad en el barrio Manuela Beltrán, Cali.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300;400;500;600;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="bar">
+  <button class="logo-btn" id="menuBtn" onclick="toggleDrawer()" aria-label="Abrir menú de FUCOMABE" aria-controls="drawer" aria-expanded="false"><img  src="img/foto-001.webp" alt="Escudo de FUCOMABE" width="58" height="58"></button>
+</header>
+<div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+<aside class="drawer" id="drawer" aria-label="Menú principal" inert>
+  <div class="drawer-header">
+    <span class="drawer-logo"><img class="lg" src="img/foto-001.webp" alt="Escudo de FUCOMABE" width="46" height="46"> FUCOMABE</span>
+    <button class="drawer-close" onclick="closeDrawer()" aria-label="Cerrar menú">&#x2715;</button>
+  </div>
+  <nav class="drawer-nav">
+    <div class="nav-label">Menú</div>
+      <a href="#inicio" class="nav-item active" onclick="setActive(this);closeDrawer()">Inicio</a>
+      <a href="#nosotros" class="nav-item" onclick="setActive(this);closeDrawer()">Nosotros</a>
+      <a href="#logros" class="nav-item" onclick="setActive(this);closeDrawer()">Logros</a>
+      <a href="#pasado" class="nav-item" onclick="setActive(this);closeDrawer()">Pasado</a>
+      <a href="#fuimos" class="nav-item" onclick="setActive(this);closeDrawer()">Lo que fuimos</a>
+      <a href="#convenios" class="nav-item" onclick="setActive(this);closeDrawer()">Convenios</a>
+      <a href="#aliados" class="nav-item" onclick="setActive(this);closeDrawer()">Aliados</a>
+      <a href="#actividades" class="nav-item" onclick="setActive(this);closeDrawer()">Actividades</a>
+      <a href="#sala" class="nav-item" onclick="setActive(this);closeDrawer()">Sala de sistemas</a>
+      <a href="#metas" class="nav-item" onclick="setActive(this);closeDrawer()">Metas</a>
+      <a href="#galeria" class="nav-item" onclick="setActive(this);closeDrawer()">Galería</a>
+      <a href="#contacto" class="nav-item" onclick="setActive(this);closeDrawer()">Contacto</a>
+  </nav>
+  <p class="drawer-foot">Fundación Comunitaria Manuela Beltrán<br>Cali, Colombia</p>
+</aside>
+
+<main class="hero blk" id="inicio">
+  <!-- FOTO DEL COLEGIO: se muestra aquí y se degrada al bajar. Mientras tanto hay una ilustración de marcador -->
+  <div class="photo" id="heroPhoto" role="img" aria-label="Patio y fachada del colegio FUCOMABE" style="--img:url(img/foto-002.jpg)"></div>
+  <div class="fade"></div>
+  <div class="hero-in">
+    <h1>Educación que inspira<br>para toda la <em>vida</em></h1>
+    <p>Fundación Comunitaria Manuela Beltrán: un colegio con sentido de comunidad en el barrio Manuela Beltrán, oriente de Cali.</p>
+    <a class="more" href="#nosotros">Conoce el colegio <span aria-hidden="true">↓</span></a>
+  </div>
+  
+</main>
+
+<section class="sec blk" id="nosotros">
+  <div class="two">
+    <div>
+      <p class="eyebrow">Nosotros</p>
+      <h2>Fundación Comunitaria Manuela Beltrán</h2>
+      <p class="lead">FUCOMABE es una institución educativa del barrio Manuela Beltrán, en el oriente de Cali. Aquí cuentas quiénes son, de dónde vienen y qué los mueve.</p>
+      <!-- EDITAR: historia, misión y visión -->
+      <p class="todo">[Historia: año de fundación, quiénes la impulsaron y cómo nació.]</p>
+      <p class="todo">[Misión y visión del colegio.]</p>
+    </div>
+    <label class="ph tall has" aria-label="Foto del colegio" style="background-image:url(img/foto-003.jpg)"><span>Foto: el colegio</span><input type="file" accept="image/*"></label>
+  </div>
+</section>
+
+
+<div class="band blk" id="pasado">
+  <label class="bgph has" aria-label="Foto de Nuestro pasado" style="--img:url(img/foto-004.jpg)"><span>Foto: Nuestro pasado</span><input type="file" accept="image/*" aria-label="Subir foto de Nuestro pasado"></label><section class="sec">
+  <a class="back" href="#volver">← Volver al inicio</a>
+  <p class="eyebrow">Nuestro pasado</p>
+  <h2>Nuestro pasado como institución</h2>
+  <p class="lead">Cómo nació FUCOMABE, quiénes la impulsaron y qué momentos marcaron su historia.</p>
+  <a class="more sublink" href="#pasado">Ver nuestro pasado →</a>
+  <div class="grid g3"><article class="card"><div class="ph sm has" style="background-image:url(img/foto-005.jpg)"><span>2013</span><input type="file" accept="image/*" aria-label="Cambiar foto: Día de la madre"></div><div class="body"><span class="tag">2013</span><h3>Día de la madre</h3><p class="todo" style="border-color:var(--red)">Los estudiantes elaboraron con sus propias manos un detalle para sus mamás, con cintas y materiales reciclables.</p></div></article><article class="card"><div class="ph sm has" style="background-image:url(img/foto-006.jpg)"><span>2013</span><input type="file" accept="image/*" aria-label="Cambiar foto: Día del estudiante"></div><div class="body"><span class="tag">2013</span><h3>Día del estudiante</h3><p class="todo" style="border-color:var(--red)">Jornada de baile, canto y dramatizados. Los niños de K° a 2° recibieron un detalle de incentivo.</p></div></article><article class="card"><div class="ph sm has" style="background-image:url(img/foto-007.jpg)"><span>2013</span><input type="file" accept="image/*" aria-label="Cambiar foto: Tiempo libre"></div><div class="body"><span class="tag">2013</span><h3>Tiempo libre</h3><p class="todo" style="border-color:var(--red)">Actividades de integración del proyecto de tiempo libre: juegos de mesa, cine y trabajo en clase.</p></div></article></div>
+  <h3 class="momentos">Más momentos de 2013</h3>
+  <div class="shots"><figure class="shot" style="background-image:url(img/foto-008.jpg)" role="img" aria-label="Momento de 2013"></figure><figure class="shot" style="background-image:url(img/foto-009.jpg)" role="img" aria-label="Momento de 2013"></figure><figure class="shot" style="background-image:url(img/foto-010.jpg)" role="img" aria-label="Momento de 2013"></figure><figure class="shot" style="background-image:url(img/foto-011.jpg)" role="img" aria-label="Momento de 2013"></figure><figure class="shot" style="background-image:url(img/foto-012.jpg)" role="img" aria-label="Momento de 2013"></figure><figure class="shot" style="background-image:url(img/foto-013.jpg)" role="img" aria-label="Momento de 2013"></figure><figure class="shot" style="background-image:url(img/foto-014.jpg)" role="img" aria-label="Momento de 2013"></figure><figure class="shot" style="background-image:url(img/foto-015.jpg)" role="img" aria-label="Momento de 2013"></figure></div>
+</section></div>
+
+<section class="sec blk" id="fuimos">
+  <label class="bgph has" aria-label="Foto de Lo que fuimos" style="--img:url(img/foto-016.jpg)"><span>Foto: Lo que fuimos</span><input type="file" accept="image/*" aria-label="Subir foto de Lo que fuimos"></label>
+  <a class="back" href="#volver">← Volver al inicio</a>
+  <p class="eyebrow">Lo que fuimos · Pronto seremos</p>
+  <h2>De dónde venimos y hacia dónde vamos</h2>
+  <a class="more sublink" href="#fuimos">Ver lo que fuimos →</a>
+  <div class="grid two2">
+    <article class="card"><label class="ph has" style="background-image:url(img/foto-017.jpg)"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="m21 16-5-5-8 8"/></svg><span>Foto: lo que fuimos</span><input type="file" accept="image/*"></label><div class="body"><h3>Lo que fuimos</h3><p class="lead" style="max-width:none">Venimos de una institución con sueños grandes y esperanzas formidables. Con muchas motivaciones para hacer fluir futuros de estudiantes, padres e incluso de los propios docentes: sacar sonrisas, muecas, de todo, y darle una esperanza a un mejor futuro.</p></div></article>
+    <article class="card"><label class="ph has logo-ph" style="background-image:url(img/foto-018.jpg)" aria-label="Logo Misión Futura"><span>Foto: pronto seremos</span><input type="file" accept="image/*" aria-label="Cambiar logo"></label><div class="body"><h3>Pronto seremos</h3><p class="todo">[Describe el proyecto a futuro: obras, programas o metas con fecha estimada.]</p></div></article>
+  </div>
+</section>
+
+<section class="sec blk" id="convenios">
+  <label class="bgph has" aria-label="Foto de Convenios" style="--img:url(img/foto-019.jpg)"><span>Foto: Convenios</span><input type="file" accept="image/*" aria-label="Subir foto de Convenios"></label>
+  <a class="back" href="#volver">← Volver al inicio</a>
+  <p class="eyebrow">Convenios</p>
+  <h2>Alianzas que nos fortalecen</h2>
+  <p class="lead">Convenios vigentes con instituciones, empresas y entidades.</p>
+  <a class="more sublink" href="#convenios">Ver convenios →</a>
+  <div class="grid g4">
+    <article class="card"><label class="ph sm has logo-conv" aria-label="Logo Secretaría del Deporte" style="background-image:url(img/foto-020.png)"><span>Logo del convenio</span><input type="file" accept="image/*"></label><div class="body"><h3>Secretaría del Deporte</h3><p class="todo">[Tipo de convenio, año y beneficio para los estudiantes.]</p></div></article>
+    <article class="card"><label class="ph sm has logo-conv" aria-label="Logo Banco de Alimentos" style="background-image:url(img/foto-021.jpg)"><span>Logo del convenio</span><input type="file" accept="image/*"></label><div class="conv-foto" style="background-image:url(img/foto-022.jpg)" role="img" aria-label="Estudiantes de FUCOMABE almorzando"></div><div class="body"><h3>Banco de Alimentos</h3><p class="todo">[Tipo de convenio, año y beneficio para los estudiantes.]</p></div></article>
+    <article class="card"><label class="ph sm has logo-conv" aria-label="Logo Colegio Leonístico de la Mercedes" style="background-image:url(img/foto-023.jpg)"><span>Logo del convenio</span><input type="file" accept="image/*"></label><div class="body"><h3>Colegio Leonístico de la Mercedes</h3><p class="todo">[Tipo de convenio, año y beneficio para los estudiantes.]</p></div></article>
+    <article class="card"><label class="ph sm has logo-conv" aria-label="Logo Pre-ICFES Paulo Freire del Chonta" style="background-image:url(img/foto-024.jpg)"><span>Logo del convenio</span><input type="file" accept="image/*"></label><div class="body"><h3>Pre-ICFES Paulo Freire del Chonta</h3><p class="todo">[Tipo de convenio, año y beneficio para los estudiantes.]</p></div></article>
+    <article class="card"><label class="ph sm has logo-conv" aria-label="Logo Grupo juvenil" style="background-image:url(img/foto-024.jpg)"><span>Logo del convenio</span><input type="file" accept="image/*"></label><div class="body"><h3>Grupo juvenil</h3><p class="todo">[Tipo de convenio, año y beneficio para los estudiantes.]</p></div></article>
+  </div></article>
+  </div>
+</section>
+
+<div class="band blk" id="aliados">
+  <label class="bgph has" aria-label="Foto de Colegios aliados" style="--img:url(img/foto-025.jpg)"><span>Foto: Colegios aliados</span><input type="file" accept="image/*" aria-label="Subir foto de Colegios aliados"></label><section class="sec">
+  <a class="back" href="#volver">← Volver al inicio</a>
+  <p class="eyebrow">Colegios aliados</p>
+  <h2>Colegios que caminan con nosotros</h2>
+  <p class="lead">Instituciones con las que compartimos proyectos, intercambios o formación.</p>
+  <a class="more sublink" href="#aliados">Ver colegios aliados →</a>
+  <div class="grid g4">
+    <div class="ali"><img src="img/foto-023.jpg" alt="Logo Colegio Leonístico La Merced"><p>Colegio Leonístico “La Merced”</p></div>
+  </div>
+</section></div>
+
+<section class="sec blk" id="actividades">
+  <label class="bgph has" aria-label="Foto de Tipos de actividades" style="--img:url(img/foto-026.jpg)"><span>Foto: Tipos de actividades</span><input type="file" accept="image/*" aria-label="Subir foto de Tipos de actividades"></label>
+  <a class="back" href="#volver">← Volver al inicio</a>
+  <p class="eyebrow">Tipos de actividades</p>
+  <h2>Lo que hacemos cada día</h2>
+  <a class="more sublink" href="#actividades">Ver actividades →</a>
+  <div class="grid g4" id="actGrid"></div>
+</section>
+
+<section class="sec blk" id="sala">
+  <label class="bgph has" aria-label="Foto de Sala de sistemas" style="--img:url(img/foto-027.jpg)"><span>Foto: Sala de sistemas</span><input type="file" accept="image/*" aria-label="Subir foto de Sala de sistemas"></label>
+  <a class="back" href="#volver">← Volver al inicio</a>
+  <p class="eyebrow">Sala de sistemas</p>
+  <h2>Contamos con una sala de sistemas</h2>
+  <p class="lead">Un espacio equipado con computadores y video proyector, donde nuestros estudiantes aprenden y practican tecnología.</p>
+  <a class="more sublink" href="#sala">Ver la sala de sistemas →</a>
+  <div class="grid g3 sala-g"><label class="ph has" style="background-image:url(img/foto-027.jpg)"><span>Sala de sistemas 1</span><input type="file" accept="image/*" aria-label="Cambiar foto: sala de sistemas 1"></label><label class="ph has" style="background-image:url(img/foto-028.jpg)"><span>Sala de sistemas 2</span><input type="file" accept="image/*" aria-label="Cambiar foto: sala de sistemas 2"></label><label class="ph has" style="background-image:url(img/foto-029.jpg)"><span>Sala de sistemas 3</span><input type="file" accept="image/*" aria-label="Cambiar foto: sala de sistemas 3"></label></div>
+</section>
+
+
+  
+
+<div class="band blk" id="logrosTeaser"><label class="bgph has" aria-label="Foto de Logros" style="--img:url(img/foto-030.jpg)"><span>Foto: Logros</span><input type="file" accept="image/*" aria-label="Subir foto de Logros"></label><section class="sec">
+  <p class="eyebrow">Logros</p>
+  <h2>Lo que hemos construido juntos</h2>
+  <p class="lead">Una página dedicada a los logros del colegio: qué se alcanzó, cómo se desarrolló y de qué manera se hizo realidad.</p>
+  <article class="card feat"><div class="emo" aria-hidden="true">🥇</div><div class="body"><p class="eyebrow">Logro destacado</p><h3>Torneo de jabalinas</h3><p>A nivel municipal, el colegio obtuvo la medalla de oro en el torneo de jabalinas, la medalla de plata en lanzamiento de bala y el segundo lugar en lanzamiento de lanza.</p></div></article>
+  <a class="more" href="#logros">Ver todos los logros →</a>
+</section></div>
+
+<div class="band blk" id="logrosBand">
+  <label class="bgph has" aria-label="Foto de Logros" style="--img:url(img/foto-030.jpg)"><span>Foto: Logros</span><input type="file" accept="image/*" aria-label="Subir foto de Logros"></label><section class="sec" id="logros">
+  <a class="back" href="#volver">← Volver al inicio</a>
+  <p class="eyebrow">Logros</p>
+  <h2>Lo que hemos construido juntos</h2>
+  <p class="lead">Cada logro con su foto, cómo se desarrolló y de qué manera se alcanzó.</p>
+  <div class="grid g3"><article class="card"><div class="emo" aria-hidden="true">⚽</div><div class="body"><h3>Campeonatos de fútbol</h3><p>El colegio logró quedar dos veces consecutivas en semifinales a nivel municipal.</p></div></article><article class="card"><div class="emo" aria-hidden="true">🥇</div><div class="body"><h3>Torneo de jabalinas</h3><p>A nivel municipal, el colegio obtuvo la medalla de oro en el torneo de jabalinas, la medalla de plata en lanzamiento de bala y el segundo lugar en lanzamiento de lanza.</p></div></article><article class="card"><div class="emo" aria-hidden="true">♟️</div><div class="body"><h3>Torneo de ajedrez</h3><p>A nivel municipal, el colegio logró llegar a las semifinales en ajedrez.</p></div></article></div>
+</section></div>
+
+<section class="sec blk" id="metas">
+  <label class="bgph has" aria-label="Foto de Metas" style="--img:url(img/foto-031.jpg)"><span>Foto: Metas</span><input type="file" accept="image/*" aria-label="Subir foto de Metas"></label>
+  <a class="back" href="#volver">← Volver al inicio</a>
+  <p class="eyebrow">Metas</p>
+  <h2>Hacia dónde vamos</h2>
+  <p class="lead">Las metas del colegio, el plazo y el camino para alcanzarlas.</p>
+  <a class="more sublink" href="#metas">Ver nuestras metas →</a>
+  <div class="grid g3 mv"><article class="card"><div class="body"><h3>Lema</h3><p>Instruye al niño en su camino y aun cuando fuese viejo no se apartará de él.</p></div></article><article class="card"><div class="body"><h3>Misión</h3><p>En aras de formar nuevas generaciones la institución educativa colegio comunitario “FUCOMABE” imparte o brinda una educación desde la primera infancia, básica primaria, básica secundaria y media vocacional, nos proponemos contribuir a través de la educación una labor comunitaria, capaz de responder a los retos actuales, fundamentada en el respeto por la vida, la solidaridad y cooperación, generando así el rescate y defensa de los valores humanos encaminado a hacer del aprendizaje un proceso placentero y eficaz.</p></div></article><article class="card"><div class="body"><h3>Visión</h3><p>Nuestra institución COLEGIO COMUNITARIO “FUCOMABE”, al 2026, será reconocido por promover la formación integral de los futuros ciudadanos en el campo de la educación desde la primera infancia, básica primaria, básica secundaria y media vocacional. Mediante acciones y procesos pedagógicos significativos que respondan de manera crítica, creativa y ética en la construcción de una mejor sociedad, de acuerdo a las necesidades de la vida humana, brindándoles herramientas científicas y tecnológicas.</p></div></article></div>
+  <div class="meta-logo"><img src="img/foto-001.webp" alt="Logo de la Fundación Comunitaria Manuela Beltrán (FUCOMABE)"></div>
+ </section>
+  
+
+<div class="band blk" id="galeriaW"><label class="bgph" aria-label="Foto de Galería"><span>Foto: Galería</span><input type="file" accept="image/*" aria-label="Subir foto de Galería"></label><section class="sec" id="galeria">
+  <a class="back" href="#volver">← Volver al inicio</a>
+  <p class="eyebrow">Galería</p>
+  <h2>Nuestro colegio en imágenes</h2>
+  <p class="lead">Momentos del colegio, en imágenes.</p>
+  <a class="more sublink" href="#galeria">Ver la galería →</a>
+  <div class="grid g3" id="gal"></div>
+</section></div>
+
+<section class="sec blk" id="contacto">
+  <p class="eyebrow">Contacto</p>
+  <h2>Visítanos</h2>
+  <a class="more fb" href="https://www.facebook.com/fucomabe" target="_blank" rel="noopener">Síguenos en Facebook →</a>
+  
+</section>
+<footer>© FUCOMABE · Fundación Comunitaria Manuela Beltrán · NIT 800025517-6 · Cali, Colombia · <a href="https://www.facebook.com/fucomabe" target="_blank" rel="noopener" style="text-decoration:underline">Facebook</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
